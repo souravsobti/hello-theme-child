@@ -21,3 +21,8 @@ function hello_elementor_child_enqueue_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
+
+
+if (function_exists("register_sidebar")) {
+  register_sidebar();
+}
